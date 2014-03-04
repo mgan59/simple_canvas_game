@@ -1,0 +1,14 @@
+{
+  "name": "simple_canvas_pixi_game",
+  "version": "0.1.0",
+  "description": "a simple canvas game using pixi",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Morgan Craft (http://morgancraft.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~3.4.8"
+  }
+}
