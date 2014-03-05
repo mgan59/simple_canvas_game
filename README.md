@@ -5,4 +5,6 @@ Build your first HTML5 Canvas game in no time! [Read the whole article here!](ht
 ## Versions
 
   * [Original LDG HTML5 Canvas](simple_canvas/)
-  * [Pixi](pixi/) 
+  * [Pixi (same origin enabled)](pixi/)
+  * [Pixi with asset server](pixi-with-server/)
+
