@@ -1,15 +1,6 @@
 # Simple Pixi Game
 
+A ported version of the [Lost Decade Simple Html5 canvas game](http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/) to work with [Pixi](http://www.pixijs.com) `1.5.1`.  This version uses same-origin asset loading.
 
-In order to run the [Pixi](http://www.pixijs.com) version of the [Lost Decade game](http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/) you will need nodejs/npm.  Pixi will dynamically load the images and will throw a cross-origin error if the page isn't being served.
 
-Currently the demo is using Pixi `1.5.1`
-
-    # install the nodejs modules (express)
-    npm install .
-
-Run the server
-
-    # starts the server
-    npm start
 

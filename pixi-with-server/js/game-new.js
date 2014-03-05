@@ -1,4 +1,3 @@
-
 var viewPort = {width:512,height:480};
 // create pixi stage
 var stage = new PIXI.Stage(0x000000);
@@ -12,7 +11,6 @@ document.body.appendChild(renderer.view);
 // Below are examples of creating a background, hero, monster sprite
 
 // create a background sprite
-// .fromImage accepts a true param to enable same-origin-requests
 var bgTexture = PIXI.Texture.fromImage("images/background.png",true);
 var bgSprite = new PIXI.Sprite(bgTexture);
 // important that you start at 0, will throw exception if
@@ -118,4 +116,3 @@ var main = function () {
 reset();
 var then = Date.now();
 setInterval(main, 1); // Execute as fast as possible
-

@@ -1,4 +1,3 @@
-
 var viewPort = {width:512,height:480};
 // create pixi stage
 var stage = new PIXI.Stage(0x000000);
@@ -10,22 +9,20 @@ document.body.appendChild(renderer.view);
 // PIXI requires you to load images as textures
 // Then Create a Sprite asset with the texture object
 // Below are examples of creating a background, hero, monster sprite
-
 // create a background sprite
-// .fromImage accepts a true param to enable same-origin-requests
-var bgTexture = PIXI.Texture.fromImage("images/background.png",true);
+var bgTexture = PIXI.Texture.fromImage("http://localhost:5975/images/background.png");
 var bgSprite = new PIXI.Sprite(bgTexture);
 // important that you start at 0, will throw exception if
 // you call addChildAt with an index that exceeds the .length
 stage.addChildAt(bgSprite,0);
 
 // Hero image
-var heroTexture = PIXI.Texture.fromImage("images/hero.png",true);
+var heroTexture = PIXI.Texture.fromImage("http://localhost:5975/images/hero.png");
 var heroSprite = new PIXI.Sprite(heroTexture);
 stage.addChildAt(heroSprite,1);
 
 // Monster image
-var mobTexture = PIXI.Texture.fromImage("images/monster.png",true);
+var mobTexture = PIXI.Texture.fromImage("http://localhost:5975/images/monster.png");
 var mobSprite = new PIXI.Sprite(mobTexture);
 stage.addChildAt(mobSprite,2);
 
@@ -118,4 +115,3 @@ var main = function () {
 reset();
 var then = Date.now();
 setInterval(main, 1); // Execute as fast as possible
-
